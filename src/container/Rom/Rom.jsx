@@ -20,6 +20,14 @@ const Rom = () => {
   let streaming = null;
   let processVideoInterval;
   
+  const stopVideoPlayback = () => {
+    if (videoRef.current) {
+      videoRef.current.pause();
+      videoRef.current.src = "";
+      videoRef.current.srcObject = null;
+    }
+  };
+
   const onClickVideoStream = () => {
     let video = document.getElementById("vid");
     let canvas = document.getElementById("canvas");
@@ -86,6 +94,8 @@ const Rom = () => {
   };
 
   const onClickInputVideoStream = () => {
+    // Call stopVideoPlayback function before setting a new video source
+    stopVideoPlayback();
     let video = document.getElementById("vid");
     let canvas = document.getElementById("canvas");
     let time_element = document.getElementById("time");
@@ -98,9 +108,10 @@ const Rom = () => {
   
     // Function to handle file selection
     fileInput.addEventListener("change", function (event) {
+      
       const file = event.target.files[0]; // Get the selected file
       const blobUrl = URL.createObjectURL(file); // Create a blob URL for the selected file
-  
+      stopVideoPlayback();
       if (streaming == null) {
         streaming = "file"; // Indicate that we're using a file instead of a camera stream
   
@@ -183,10 +194,6 @@ const Rom = () => {
       }
     });
   };
-  
-  
-  
-  
   
   // Configs
   const modelName = "yolov8n-pose.onnx";
