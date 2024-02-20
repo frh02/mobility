@@ -16,5 +16,4 @@ services01,
 services02,
 services03,
 hero,
-
 };

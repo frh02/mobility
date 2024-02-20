@@ -1,6 +1,7 @@
 import React from 'react';
 import { Headings } from '../../components';
 import { data } from '../../constants';
+import Nav from 'react-bootstrap/Nav';
 import { BsFillArrowUpRightCircleFill } from 'react-icons/bs';
 
 import './Services.css';

@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Contact, Footer, Hero, Services} from './container';
-import { Menu } from './components';
+import { Menu, Rom } from './components';
 
 
 
@@ -12,6 +12,7 @@ const App = () => (
     <Services />
     <Contact />
     <Footer />
+    <Rom />
   </div>
 );
 
