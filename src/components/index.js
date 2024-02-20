@@ -1,8 +1,8 @@
 import Menu from './Menu/Menu';
 import Headings from './Headings/Headings';
 import IconScroll from './IconScroll/IconScroll';
-import Rom from './Rom/Rom';
-// import Loader from './Rom/Loader';
+import Loader from './Loader/Loader';
+import Home from './Home/Home'
 export{
-    Menu,Headings,IconScroll, Rom
+    Menu,Headings,IconScroll,Loader,Home
 }

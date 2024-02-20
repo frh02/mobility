@@ -7,6 +7,9 @@ import Process from './Process/Process';
 import Services from './Services/Services';
 import Team from './Team/Team';
 import CTA from './CTA/CTA';
+import Rom from './Rom/Rom';
+import Sts from './Sts/Sts';
+import Tug from './Tug/Tug';
 
 export {
     Testimonials,
@@ -18,4 +21,7 @@ export {
     Process,
     Services,
     Team,
+    Rom,
+    Sts,
+    Tug,
 }

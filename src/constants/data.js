@@ -1,36 +1,50 @@
 import images from './images';
-import { Rom } from '../components';
 
 const Menu = [
     {
-        text: 'About us',
-        link: '#team',
+        text: 'Home',
+        link: '/home',
     },
     {
         text: 'Services',
         link: '#services',
     },
-    
+    {
+        text: 'Range of Motion',
+        link: '/rom',
+    },
+    {
+        text: 'Sit to Stand',
+        link: '/sts',
+    },
+    {
+        text: 'Timed up and Go',
+        link: '/tug',
+    },
+    {
+        text: 'About us',
+        link: '/team',
+    },
 ];
 const ServicesData = [
     {
         titleone: 'Range of Motion',
         titletwo: 'Test',
-        link: Rom,
+        link: '#rom',
         itemclass: 'blight',
         imgURL: images.services01,
     },
     {
         titleone: 'Sit to Stand',
         titletwo: 'Test',
-        link: '#',
+        link: '#sts',
         itemclass: 'bgreen',
         imgURL: images.services02,
     },
     {
         titleone: 'Timed up and go',
         titletwo: 'Test',
-        link: '#',
+        link: '#tug',
         itemclass: 'bdark',
         imgURL: images.services03,
     },
